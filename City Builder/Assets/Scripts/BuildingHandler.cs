@@ -8,6 +8,9 @@ public class BuildingHandler : MonoBehaviour
     public Camera mainCamera;
     public LayerMask buildableAreaMask;
 
+    private GameObject ghost;
+    public Material ghostMaterial;
+
     [SerializeField]
     private int selectionIndex;
 
@@ -29,16 +32,33 @@ public class BuildingHandler : MonoBehaviour
     {
         if (selectionIndex >= 0)
         {
+            Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            Physics.Raycast(ray, out hit, Mathf.Infinity, buildableAreaMask);
+
+            // Grid System:
+            Vector3 position = new Vector3(Mathf.Round(hit.point.x), Mathf.Round(hit.point.y), Mathf.Round(hit.point.z));
+
+            if (hit.collider != null)
+            {
+                BuildableObject buildable = buildables[selectionIndex];
+                if (ghost == null)
+                {
+                    ghost = Instantiate(buildable.prefab, position + buildable.offset, Quaternion.identity);
+                    ghost.GetComponent<Renderer>().material = ghostMaterial;
+                }
+                else
+                {
+                    ghost.transform.position = position + buildable.offset;
+                }
+            }
+
             if (Input.GetMouseButtonDown(0))
             {
-                Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
-                RaycastHit hit;
-                Physics.Raycast(ray, out hit, Mathf.Infinity, buildableAreaMask);
-
                 if (hit.collider != null)
                 {
                     BuildableObject buildable = buildables[selectionIndex];
-                    Instantiate(buildable.prefab, hit.point + buildable.offset, Quaternion.identity);
+                    Instantiate(buildable.prefab, position + buildable.offset, Quaternion.identity);
                 }
             }
         }

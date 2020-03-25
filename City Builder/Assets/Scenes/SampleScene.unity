@@ -443,6 +443,7 @@ MonoBehaviour:
   buildableAreaMask:
     serializedVersion: 2
     m_Bits: 256
+  ghostMaterial: {fileID: 2100000, guid: 19ac33b6514c15c42991673bffde4952, type: 2}
   selectionIndex: 0
 --- !u!4 &2009287662
 Transform:
