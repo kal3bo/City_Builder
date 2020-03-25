@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64800f4d4c8a827488a8f2fdd259574b, type: 3}
+  m_Name: Appartments
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 121866, guid: dfb0016267344ee489343ed8010c9a61, type: 3}
+  hitboxSize: {x: 0, y: 0}
+  offset: {x: 0, y: 1.8, z: 0}
