@@ -16,7 +16,7 @@ public class BuildingHandler : MonoBehaviour
 
     public void Select(int index)
     {
-        if(index >= 0 || index < buildables.Length)
+        if (index >= 0 || index < buildables.Length)
         {
             selectionIndex = index;
         }
@@ -27,6 +27,7 @@ public class BuildingHandler : MonoBehaviour
         selectionIndex = -1;
     }
 
+    public Vector3 position;
     // Update is called once per frame
     void Update()
     {
@@ -37,7 +38,7 @@ public class BuildingHandler : MonoBehaviour
             Physics.Raycast(ray, out hit, Mathf.Infinity, buildableAreaMask);
 
             // Grid System:
-            Vector3 position = new Vector3(Mathf.Round(hit.point.x), Mathf.Round(hit.point.y), Mathf.Round(hit.point.z));
+            position = new Vector3(Mathf.Round(hit.point.x), Mathf.Round(hit.point.y), Mathf.Round(hit.point.z));
 
             if (hit.collider != null)
             {
@@ -62,5 +63,13 @@ public class BuildingHandler : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void UpdateGhost(int newIndex)
+    {
+        Destroy(ghost);
+        selectionIndex = newIndex;
+        ghost = Instantiate(buildables[selectionIndex].prefab, position + buildables[selectionIndex].offset, Quaternion.identity);
+        ghost.GetComponent<Renderer>().material = ghostMaterial;
     }
 }
