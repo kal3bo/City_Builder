@@ -1,56 +1,145 @@
 fileFormatVersion: 2
 guid: 749ba57ee9bb8e240a50450957b54449
-timeCreated: 1514231371
-licenseType: Store
 ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: Arm_L
-    100002: Arm_R
-    100004: Body1
-    100006: Body2
-    100008: Brow_L
-    100010: Brow_R
-    100012: //RootNode
-    100014: Doctor
-    100016: Eye_L
-    100018: Eye_R
-    100020: Leg_L
-    100022: Leg_R
-    100024: Root
-    400000: Arm_L
-    400002: Arm_R
-    400004: Body1
-    400006: Body2
-    400008: Brow_L
-    400010: Brow_R
-    400012: //RootNode
-    400014: Doctor
-    400016: Eye_L
-    400018: Eye_R
-    400020: Leg_L
-    400022: Leg_R
-    400024: Root
-    4300000: Doctor
-    7400000: Idle
-    7400002: Idle2
-    7400004: Idle3
-    7400006: Walk
-    7400008: Run
-    7400010: RunJumpL
-    7400012: RunJumpR
-    7400014: Jump
-    7400016: Death
-    7400018: Hit
-    7400020: Attack
-    7400022: Wave
-    7400024: Falling
-    9500000: //RootNode
-    13700000: Doctor
+  serializedVersion: 26
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Arm_L
+  - first:
+      1: 100002
+    second: Arm_R
+  - first:
+      1: 100004
+    second: Body1
+  - first:
+      1: 100006
+    second: Body2
+  - first:
+      1: 100008
+    second: Brow_L
+  - first:
+      1: 100010
+    second: Brow_R
+  - first:
+      1: 100012
+    second: //RootNode
+  - first:
+      1: 100014
+    second: Doctor
+  - first:
+      1: 100016
+    second: Eye_L
+  - first:
+      1: 100018
+    second: Eye_R
+  - first:
+      1: 100020
+    second: Leg_L
+  - first:
+      1: 100022
+    second: Leg_R
+  - first:
+      1: 100024
+    second: Root
+  - first:
+      4: 400000
+    second: Arm_L
+  - first:
+      4: 400002
+    second: Arm_R
+  - first:
+      4: 400004
+    second: Body1
+  - first:
+      4: 400006
+    second: Body2
+  - first:
+      4: 400008
+    second: Brow_L
+  - first:
+      4: 400010
+    second: Brow_R
+  - first:
+      4: 400012
+    second: //RootNode
+  - first:
+      4: 400014
+    second: Doctor
+  - first:
+      4: 400016
+    second: Eye_L
+  - first:
+      4: 400018
+    second: Eye_R
+  - first:
+      4: 400020
+    second: Leg_L
+  - first:
+      4: 400022
+    second: Leg_R
+  - first:
+      4: 400024
+    second: Root
+  - first:
+      43: 4300000
+    second: Doctor
+  - first:
+      74: 7400000
+    second: Idle
+  - first:
+      74: 7400002
+    second: Idle2
+  - first:
+      74: 7400004
+    second: Idle3
+  - first:
+      74: 7400006
+    second: Walk
+  - first:
+      74: 7400008
+    second: Run
+  - first:
+      74: 7400010
+    second: RunJumpL
+  - first:
+      74: 7400012
+    second: RunJumpR
+  - first:
+      74: 7400014
+    second: Jump
+  - first:
+      74: 7400016
+    second: Death
+  - first:
+      74: 7400018
+    second: Hit
+  - first:
+      74: 7400020
+    second: Attack
+  - first:
+      74: 7400022
+    second: Wave
+  - first:
+      74: 7400024
+    second: Falling
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Doctor
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skin1
+    second: {fileID: 2100000, guid: e9fb7133aa6b8604fbbdb7d1cea8cdd5, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -63,16 +152,20 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 1
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
       name: Idle
       takeName: Take 001
+      internalID: 0
       firstFrame: 0
       lastFrame: 50
       wrapMode: 0
@@ -127,6 +220,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Idle2
       takeName: Take 001
+      internalID: 0
       firstFrame: 50
       lastFrame: 200
       wrapMode: 0
@@ -181,6 +275,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Idle3
       takeName: Take 001
+      internalID: 0
       firstFrame: 200
       lastFrame: 350
       wrapMode: 0
@@ -235,6 +330,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Walk
       takeName: Take 001
+      internalID: 0
       firstFrame: 351
       lastFrame: 369
       wrapMode: 0
@@ -289,6 +385,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Run
       takeName: Take 001
+      internalID: 0
       firstFrame: 370
       lastFrame: 386
       wrapMode: 0
@@ -343,6 +440,7 @@ ModelImporter:
     - serializedVersion: 16
       name: RunJumpL
       takeName: Take 001
+      internalID: 0
       firstFrame: 386
       lastFrame: 394
       wrapMode: 0
@@ -397,6 +495,7 @@ ModelImporter:
     - serializedVersion: 16
       name: RunJumpR
       takeName: Take 001
+      internalID: 0
       firstFrame: 394
       lastFrame: 402
       wrapMode: 0
@@ -451,6 +550,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Jump
       takeName: Take 001
+      internalID: 0
       firstFrame: 403
       lastFrame: 419
       wrapMode: 0
@@ -505,6 +605,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Death
       takeName: Take 001
+      internalID: 0
       firstFrame: 419
       lastFrame: 432
       wrapMode: 0
@@ -559,6 +660,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Hit
       takeName: Take 001
+      internalID: 0
       firstFrame: 433
       lastFrame: 446
       wrapMode: 0
@@ -613,6 +715,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Attack
       takeName: Take 001
+      internalID: 0
       firstFrame: 446
       lastFrame: 458
       wrapMode: 0
@@ -667,6 +770,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Wave
       takeName: Take 001
+      internalID: 0
       firstFrame: 458
       lastFrame: 480
       wrapMode: 0
@@ -721,6 +825,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Falling
       takeName: Take 001
+      internalID: 0
       firstFrame: 481
       lastFrame: 494
       wrapMode: 0
@@ -778,13 +883,23 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -794,10 +909,15 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -807,10 +927,10 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
