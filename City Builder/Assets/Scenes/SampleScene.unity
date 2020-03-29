@@ -1208,6 +1208,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characters:
   - {fileID: 1506431081298760, guid: 01ac8e53cb0e20745ac9df46716075df, type: 3}
+  - {fileID: 1426446220183340, guid: c3b4b0d0f5cb9d44c9a37e4716e2b2fb, type: 3}
+  - {fileID: 1533010185114040, guid: 7c1c77b3bae7dbb45b611a2ae45f5806, type: 3}
+  - {fileID: 1408618616253454, guid: ac957e6c76b30b346b35407c8641e3f2, type: 3}
+  - {fileID: 1264795880326988, guid: 19400d730126453418e3cba4abffd13c, type: 3}
+  - {fileID: 1375692596847318, guid: a7442bc26e4bd6747a30ae34df0a2a65, type: 3}
   buildingPositions: []
 --- !u!4 &1285493785
 Transform:

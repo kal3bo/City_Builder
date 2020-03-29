@@ -130,6 +130,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4476483243427440}
   - component: {fileID: 95836192089054408}
+  - component: {fileID: 4532737121183284150}
+  - component: {fileID: -5559960500482931181}
   m_Layer: 0
   m_Name: FarmerWoman
   m_TagString: Untagged
@@ -146,7 +148,7 @@ Transform:
   m_GameObject: {fileID: 1264795880326988}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 4881861509989074}
   - {fileID: 4692782144639738}
@@ -163,7 +165,7 @@ Animator:
   m_GameObject: {fileID: 1264795880326988}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 206c769d327f23e4c95634d9b8977d74, type: 3}
-  m_Controller: {fileID: 9100000, guid: b1a465a5f848975458eb6a85298db987, type: 2}
+  m_Controller: {fileID: 9100000, guid: 53d4b37d1404eb946a7b4a878fdbc606, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -172,6 +174,41 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!195 &4532737121183284150
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264795880326988}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.8
+  m_Speed: 1
+  m_Acceleration: 30
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1.52
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &-5559960500482931181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264795880326988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e717d2cbf6be9ea4fa1b856878241037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1494349348801236
 GameObject:
   m_ObjectHideFlags: 0
