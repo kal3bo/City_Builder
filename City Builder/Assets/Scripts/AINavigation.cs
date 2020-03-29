@@ -3,8 +3,7 @@ using UnityEngine.AI;
 
 public class AINavigation : MonoBehaviour
 {
-    //[HideInInspector]
-    public Vector3 targetPosition;
+    [HideInInspector] public Vector3 targetPosition;
     private NavMeshAgent navMeshAgent;
 
     private void Awake()

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - BuildingHandler
   - SpawnHandler
+  - Building
   layers:
   - Default
   - TransparentFX

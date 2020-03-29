@@ -53,4 +53,9 @@ public class SpawnPeople : MonoBehaviour
     {
         buildingPositions.Add(newPosition);
     }
+
+    public void Clear()
+    {
+        buildingPositions.Clear();
+    }
 }

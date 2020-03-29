@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Buildable Object", menuName = "Buildable Object")]
 public class BuildableObject : ScriptableObject
