@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class BuildingHandler : MonoBehaviour
 {
@@ -48,12 +46,12 @@ public class BuildingHandler : MonoBehaviour
     }
 
     /// <summary>
-    /// 
+    /// Once the raycast hits a buildable area the selected
+    /// building is place on the grid.
     /// </summary>
     public Vector3 hitPosition;
     void Update()
     {
-        #region Placing buildings.
         // Checking if the user has a building selected
         if (selectionIndex >= 0)
         {
@@ -94,7 +92,6 @@ public class BuildingHandler : MonoBehaviour
                 }
             }
         }
-        #endregion
     }
 
     /// <summary>

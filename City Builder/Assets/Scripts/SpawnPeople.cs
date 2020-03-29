@@ -1,14 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class SpawnPeople : MonoBehaviour
 {
+    // List of characters to provide more in the future:
     public GameObject[] characters;
-    private float time = 0.0f;
 
+    // List of the position of all buildings to spawn characters there.
     [HideInInspector] public List<Vector3> buildingPositions = new List<Vector3>();
 
+    /// <summary>
+    /// Spawn random characters in random buildings going to RANDOM places:
+    /// </summary>
+    private float time = 0.0f;
     private void Update()
     {
         time += Time.deltaTime;
@@ -27,12 +31,15 @@ public class SpawnPeople : MonoBehaviour
                     {
                         int indexOfSpawn = Random.Range(0, buildingPositions.Count);
                         int indexOfTarget = Random.Range(0, buildingPositions.Count);
+
                         // Probability of how many characters are spawning:
                         int numberOfCharacters = Random.Range(1, 5);
                         for (int i = 0; i < numberOfCharacters; i++)
                         {
+                            // Checking if they are going somewhere else:
                             if (indexOfSpawn != indexOfTarget)
                             {
+                                // Creating the character:
                                 GameObject newCharacter = characters[Random.Range(0, characters.Length)];
                                 Instantiate(newCharacter, buildingPositions[indexOfSpawn], Quaternion.identity);
                                 newCharacter.GetComponent<AINavigation>().SetTargetPosition(buildingPositions[indexOfTarget]);
@@ -49,11 +56,19 @@ public class SpawnPeople : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Receiving all the building positions and storing
+    /// them in a list to spawn and target the characters.
+    /// </summary>
     public void SetNewPosition(Vector3 newPosition)
     {
         buildingPositions.Add(newPosition);
     }
 
+    /// <summary>
+    /// Clear the list of building positions in case the user 
+    /// decides to clear the screen.
+    /// </summary>
     public void Clear()
     {
         buildingPositions.Clear();
