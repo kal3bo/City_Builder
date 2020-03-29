@@ -8,10 +8,16 @@ public class ClearScreen : MonoBehaviour
     public void DestroyAllBuildings()
     {
         GameObject[] buildings = GameObject.FindGameObjectsWithTag("Building");
+        GameObject[] characters = GameObject.FindGameObjectsWithTag("Character");
 
         for (int i = 0; i < buildings.Length; i++)
         {
             Destroy(buildings[i]);
+        }
+
+        for (int i = 0; i < characters.Length; i++)
+        {
+            Destroy(characters[i]);
         }
     }
 }

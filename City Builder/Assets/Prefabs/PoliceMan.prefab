@@ -294,7 +294,7 @@ GameObject:
   - component: {fileID: 317997590138180588}
   m_Layer: 0
   m_Name: PoliceMan
-  m_TagString: Untagged
+  m_TagString: Character
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -346,7 +346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e717d2cbf6be9ea4fa1b856878241037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPosition: {x: 0, y: 0, z: 0}
+  targetPosition: {x: 9, y: 0, z: 0}
 --- !u!195 &317997590138180588
 NavMeshAgent:
   m_ObjectHideFlags: 0
